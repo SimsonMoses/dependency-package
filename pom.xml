@@ -4,7 +4,7 @@
 
     <groupId>org.custom</groupId>
     <artifactId>dependency-package</artifactId>
-    <version>pre-release</version>
+    <version>0.0.1</version>
     <!-- Project information -->
     <name>dependency-package</name>
     <description>A simple example project for dependency</description>
@@ -16,9 +16,9 @@
     </properties>
     <scm>
         <connection>scm:git:git://github.com/simsonmoses/dependency-package.git</connection>
-        <developerConnection>scm:git:ssh://github.com/SimsonMoses/dependency-package.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com/simsonmoses/dependency-package.git</developerConnection>
         <url>https://github.com/SimsonMoses/dependency-package</url>
-        <tag>pre</tag>
+        <tag>pre-release</tag>
     </scm>
     <developers>
         <developer>
