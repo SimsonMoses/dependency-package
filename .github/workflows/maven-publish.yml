@@ -71,6 +71,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
+      - name: Create new tag
+        run: |
+            git tag ${{ env.VERSION }}
+            git push origin ${{ env.VERSION }}
+
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
