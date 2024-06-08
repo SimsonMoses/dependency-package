@@ -4,7 +4,7 @@
 
     <groupId>org.custom</groupId>
     <artifactId>dependency-package</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <!-- Project information -->
     <name>dependency-package</name>
     <description>A simple example project for dependency</description>
