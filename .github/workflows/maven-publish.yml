@@ -61,20 +61,13 @@ jobs:
             echo "New tag: $new_tag"
             echo "VERSION=$new_tag" >> $GITHUB_ENV
 
-
-
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
         env:
-          GITHUB_TOKEN: ${{ github.token }}
-
-      - name: Create new tag
-        run: |
-            git tag ${{ env.VERSION }}
-            git push origin ${{ env.VERSION }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create release
         id: create_release
